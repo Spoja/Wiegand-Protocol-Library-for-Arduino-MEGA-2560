@@ -34,7 +34,7 @@ unsigned long WIEGAND::getCode()
 		return _codeA;
       break;
     case 2:
-		return _codeV;
+		return _codeB;
       break;
 	case 3:
 		return _codeC;
