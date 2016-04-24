@@ -261,7 +261,7 @@ bool WIEGAND::DoWiegandConversion ()
 					_bitCountA=0;
 					_cardTempA=0;
 					_cardTempHighA=0;
-					_GateActive=2;
+					_GateActive=1;
 					_codeA=cardIDA;
 					return true;				
 				}
@@ -275,7 +275,7 @@ bool WIEGAND::DoWiegandConversion ()
 					_bitCountA=0;
 					_cardTempA=0;
 					_cardTempHighA=0;
-					_GateActive=2;
+					_GateActive=1;
 					
 					if (lowNibble == (~highNibble & 0x0f))		// check if low nibble matches the "NOT" of high nibble.
 					{
@@ -324,7 +324,7 @@ bool WIEGAND::DoWiegandConversion ()
 					_bitCountB=0;
 					_cardTempB=0;
 					_cardTempHighB=0;
-					_GateActive=3;
+					_GateActive=2;
 					_codeB=cardIDB;
 					return true;				
 				}
@@ -338,7 +338,7 @@ bool WIEGAND::DoWiegandConversion ()
 					_bitCountB=0;
 					_cardTempB=0;
 					_cardTempHighB=0;
-					_GateActive=3;
+					_GateActive=2;
 				
 					if (lowNibble == (~highNibble & 0x0f))		// check if low nibble matches the "NOT" of high nibble.
 					{
@@ -380,7 +380,7 @@ bool WIEGAND::DoWiegandConversion ()
 					_bitCountC=0;
 					_cardTempC=0;
 					_cardTempHighC=0;
-					_GateActive=1;
+					_GateActive=3;
 					_codeC=cardIDC;
 					return true;				
 				}
@@ -394,7 +394,7 @@ bool WIEGAND::DoWiegandConversion ()
 					_bitCountC=0;
 					_cardTempC=0;
 					_cardTempHighC=0;
-					_GateActive=1;
+					_GateActive=3;
 					
 					if (lowNibble == (~highNibble & 0x0f))		// check if low nibble matches the "NOT" of high nibble.
 					{
